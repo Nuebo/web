@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+        <div class="logout" >
+            <a href="logout.php"> <img src="logout.png" alt=""> </a>
+           </div>
+      <div class="header__superior">
+          <div class="logo" >
+              <img src="Eslogan (1).png" alt="">
+          </div>
+          <div class="search">
+              <input type="search" id="input-search" placeholder="Buscar...">
+              <div class="content-search">
+
+                  <div class="content-table">
+                      <table id="table">
+                          <thead>
+                              <tr>
+                                  <td></td>
+                              </tr>
+                          </thead>
+                          
+                          <tbody>
+                            <tr>
+                                <td><a href="Hoteles.html">Hoteles Disponibles</a></td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td><a href="Hoteles.html">Precio Hoteles</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="convertor.html">convertor de precios</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="lugares turisticos.html">Donde ir</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="Transportes.html">transportes</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="chicamocha.html">Chicamocha</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="pony.html">Actividades para los niños</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="libro.html">Casa del libro</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="Transportes.html">numero taxis</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="Transportes.html">Rutas</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="actividades.html">Actividades </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="Pagina.php">Cultura</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Pagina.php">Economia de Santander</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Hoteles4.html">Hoteles 4 estrellas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Hoteles3.html">Hoteles 3 estrellas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Hoteles5.html">Hoteles 5 estrellas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lugares turisticos.html">Que lugares puedo visitar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="actividades.html">Parapente</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="santisimo.html">Santisimo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Transportes.html">Transporte Barato</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="catedral.html">Sagrada familia</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="easteregg.html">!!!skka{}¡</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          
+          <script src="js/search.js"></script>
+          </div>
+      </div>
+      <div class="container__menu">
+          <div class="menu">
+              <input type="checkbox" id="check__menu">
+              <label id="#label__check" for="check__menu">
+                  <i class="fa-solid fa-bars icon__menu"></i>
+              </label>
+              <nav>
+                  <ul>
+                      <li><a href="Pagina.php"   ></a></li>
+                      <li><a href="Hoteles.html">Hoteles y precios 🏨</a>
+                      <ul>
+                          <li><a href="Hoteles5.html">Hoteles 5 estrellas</a></li>
+                          <li><a href="Hoteles4.html">Hoteles 4 estrellas</a></li>
+                          <li><a href="Hoteles3.html">Hoteles 3 estrellas</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="lugares turisticos.html">Lugares turisticos 🏞️</a></li>
+                      <li><a href="Transportes.html">Transportes 🚌</a></li>
+                      <li><a href="actividades.html">Actividades extremas 🪂</a></li>
+                      <li><a href="convertor.html" id="selected" >Conversion de precios 💱</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      </header>
+      
+    
+    <div class="wrapper">
+      <h1><center>Convertor de moneda</center></h1>
+      <br>
+      
+      <form action="#">
+        <div class="amount">
+          <p>Ingrese la cantidad</p>
+          <input type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>De</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>A</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Obteniendo cantidad</div>
+        <button>Resultado</button>
+      </form>
+    </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
